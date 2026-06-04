@@ -1,0 +1,144 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(#0a0a1a, #1a1a3a);
+    color: #e6e6ff;
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.08);
+    border-bottom: 2px solid #6bb6ff;
+    text-shadow: 0 0 10px #6bb6ff;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-bottom: 2px solid #6bb6ff;
+}
+
+.banner .welcome {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #000;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #6bb6ff;
+}
+
+nav a {
+    color: #9cd6ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-left: 2px solid #6bb6ff;
+}
+
+section {
+    flex: 3;
+}
+
+/* Articles */
+article {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #6bb6ff;
+    border-radius: 6px;
+}
+
+/* Images */
+img {
+    width: 30%;
+    border: 2px solid #6bb6ff;
+    margin-top: 10px;
+    transition: 0.4s;
+    .section-image {
+    width: 250px;      /* adjust size */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* centers it under the section */
+    border: 2px solid #6bb6ff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.08);
+    border-top: 2px solid #6bb6ff;
+}
+
+/* Horizontal Rules */
+hr {
+    border: 1px solid #6bb6ff;
+    margin: 20px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
